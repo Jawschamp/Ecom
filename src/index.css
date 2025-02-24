@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1a1c20];
+  }
+}
+
+@font-face {
+  font-family: 'Burbank';
+  src: url('https://cdn.jsdelivr.net/gh/South-Paw/typeface-burbank@1.0.1/fonts/BurbankBigCondensed-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Import Noto Sans from Google Fonts using @import instead of @font-face */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+@keyframes float-to-cart {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8) rotate(10deg) translateY(-20px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.2) rotate(-20deg) translate(50vw, -50vh);
+    opacity: 0;
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-indeterminate {
+  animation: indeterminate 1.5s infinite;
+  width: 50%;
+}

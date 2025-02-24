@@ -1,0 +1,60 @@
+.timeline {
+  width: 300px;
+  padding: 20px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.timeline h3 {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.timeline-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item.active {
+  background: rgba(147, 51, 234, 0.2);
+  border: 1px solid rgba(147, 51, 234, 0.5);
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.marker-label {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Scrollbar Styling */
+.timeline::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
